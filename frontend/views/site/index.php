@@ -1,6 +1,5 @@
 <?php
 
-/* @var $this yii\web\View */
 use yii\helpers\Url;
 use yii\bootstrap4\ActiveForm;
 use frontend\models\Animal;
@@ -51,26 +50,3 @@ $this->title = 'Animals';
     </div>
 
 </div>
-
-
-<?php 
-$js = "
-$(window).on('load',function(){
-    $('#inputGroupSelect01').on('change',function(){
-        let value = $('#inputGroupSelect01').val();
-        switch(value){
-            case 'Dog':
-
-            case 'Cat':
-
-            case 'Turtle':
-
-            case 'All'
-
-            default
-        }
-    })
-    
-})
-";
-$this->registerJs($js, yii\web\View::POS_END);
